@@ -220,7 +220,4 @@ def setup(app):
             'enable_eval_rst': True,
             'enable_auto_toc_tree': 'True',
             }, True)
-    app.add_transform(AutoStructify)
-    app.add_stylesheet('css/custom.css')
-    app.add_stylesheet('css/fontawesome.min.css')
-    
+
