@@ -39,7 +39,7 @@ extensions = ['sphinx.ext.autodoc',
     'sphinx.ext.todo',
     'recommonmark',
     'sphinx_markdown_tables',
-		'breathe'
+	'breathe'
     ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -49,7 +49,7 @@ templates_path = ['_templates']
 # The value should be a valid Pygments lexer name, see Showing code examples for more details.
 
 
-highlight_language = 'c'
+#highlight_language = 'c'
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -220,4 +220,4 @@ def setup(app):
             'enable_eval_rst': True,
             'enable_auto_toc_tree': 'True',
             }, True)
-
+    app.add_transform(AutoStructify)
