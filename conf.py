@@ -38,7 +38,6 @@ extensions = ['sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
     'recommonmark',
-	'breathe'
     ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -142,8 +141,7 @@ html_sidebars = {
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'littlevgl', 'LittlevGL Documentation',
-     [author], 1)
+    (master_doc,[author], 1)
 ]
 
 
@@ -153,15 +151,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'LittlevGL', 'LittlevGL Documentation',
-     author, 'LittlevGL', 'One line description of project.',
-     'Miscellaneous'),
+    (master_doc, author, ),
 ]
-
-
-breathe_projects = {
-  "lvgl":"xml/",
-}
 
 StandaloneHTMLBuilder.supported_image_types = [
     'image/svg+xml',
