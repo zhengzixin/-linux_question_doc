@@ -7,6 +7,9 @@
 
    linux_app.md
    linux_cmd.md
+   linux_fdisk.md
    tar_error.md
+   wiringpi_error.md
    other.md
+   
 ```
